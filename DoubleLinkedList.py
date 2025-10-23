@@ -1,4 +1,5 @@
 from Node import Node
+from customer import Customer
 
 class DoubleLinkedList:
 
