@@ -9,8 +9,9 @@ def add_customer(name, lastname, phone):
     lastname = input("Digite el apellido del usuario ")
     phone = input("Digite el telefono del usuario ")
     """
-    _id += 1
-    c1 = Customer(name, lastname, phone, _id)
+    id = input("Digite el id del usuario ")
+    c1 = Customer(name, lastname, phone, id)
+    id += 1
 
     list.append(c1)
    
