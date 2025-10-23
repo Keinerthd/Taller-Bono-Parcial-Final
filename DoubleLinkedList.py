@@ -6,13 +6,13 @@ class DoubleLinkedList:
         self.tail = None
         self._size = 0
 
-    def preprend(Self, data):
-        new_node = Node(data)
+    def preprend(Self, new_node):
+        
         new_node.prev = None
         new_node.next = self.head
         if self.head is not None:
             new_node.prev = self.tail
-            self.head.prev = new_node
+            self.head.prev = self.tail
 
         self.head = new_node
         self._size += 1
@@ -41,9 +41,9 @@ name = input("Digite el nombre del usuario")
 lastname = input("Digite el apellido del usuario")
 phone = input("Digite el telefono del usuario")
 
-c1 = Customer(name, lastname, phone)
-
-
+c1 = Customer(id, name, lastname, phone)
+c2 = Customer(id, name, lastname, phone)
+c3 = Customer(id, name, lastname, phone)
 
 
 sll = DoubleLinkedList()
