@@ -11,7 +11,7 @@ def add_customer(name, lastname, phone):
     """
     id = input("Digite el id del usuario ")
     id = int (id)
-    
+
     c1 = Customer(name, lastname, phone, id)
     id += 1
 
@@ -32,7 +32,7 @@ def registrar_cliente():
 
 def listar_clientes():
     print("Lista de clientes registrados:")
-
+    
     
 
 
