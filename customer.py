@@ -9,7 +9,8 @@ class Customer(Node):
         self.id = id
     
 
-    
+    def __repr__(self):
+        return f"Customer(id={self.id!r}, name={self.name!r}, lastname={self.lastname!r}, phone={self.phone!r}, isActive={self.isActive!r})"
 
 
 
