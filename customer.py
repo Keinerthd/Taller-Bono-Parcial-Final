@@ -1,12 +1,12 @@
-class Customer:
-    def __init__(self, name, lastname, phone):
+from Node import Node
+class Customer(Node):
+    def __init__(self, name, lastname, phone, isActive):
         self.name = name
         self.lastname = lastname
         self.phone = phone
+        self.isActive = isActive 
+        self.id = id
 
 
-name = input("Digite el nombre del cliente")
-lastname = input("Digite el apellido")
-phone
 
-Customer()
+
