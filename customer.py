@@ -1,7 +1,7 @@
 from Node import Node
 class Customer(Node):
     
-    def __init__(self, name, lastname, phone, isActive):
+    def __init__(self, name, lastname, phone, isActive, id=0):
         self.name = name
         self.lastname = lastname
         self.phone = phone

@@ -1,36 +1,35 @@
+from DoubleLinkedList import DoubleLinkedList
+from customer import Customer
 
-from Customer import Customer
+list = DoubleLinkedList()
 
 def add_customer(name, lastname, phone):
-    id = input ("digite el id del usuario ")
+    """
     name = input("Digite el nombre del usuario ")
     lastname = input("Digite el apellido del usuario ")
     phone = input("Digite el telefono del usuario ")
+    """
+    _id += 1
+    c1 = Customer(name, lastname, phone, _id)
 
-    c1 = Customer(id, name, lastname, phone)
-    c2 = Customer(id, name, lastname, phone)
-    c3 = Customer(id, name, lastname, phone)
-
-
-    sll = DoubleLinkedList()
-    sll.preprend(c1)
-    sll.preprend(c2)
-    sll.preprend(c3)
-
-    print(sll)
+    list.append(c1)
+   
 
 
 
 # ---------------- CLIENTES ----------------
 def registrar_cliente():
+    
     name = input("Ingrese el nombre del cliente: ")
     lastname = input("Ingrese el apellido del cliente: ")
     phone = input("Ingrese el teléfono del cliente: ")
     add_customer(name, lastname, phone)
     print("Cliente registrado exitosamente.")
+    
 
 def listar_clientes():
     print("Lista de clientes registrados:")
+
     
 
 
