@@ -10,6 +10,8 @@ def add_customer(name, lastname, phone):
     phone = input("Digite el telefono del usuario ")
     """
     id = input("Digite el id del usuario ")
+    id = int (id)
+    
     c1 = Customer(name, lastname, phone, id)
     id += 1
 
